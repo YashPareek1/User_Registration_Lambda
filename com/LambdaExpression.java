@@ -23,6 +23,11 @@ public class LambdaExpression {
 		String LastName = s.next();
         Lamda Lastname=(String value) -> Pattern.matches("^[A-Z a-z]{3,25}$",LastName);
 		System.out.println(Lastname.eval("value"));
+		
+		  System.out.println("Enter Email : ");
+	      String Email1 = s.next();
+	      Lamda Email=(String value) -> Pattern.matches("^(?!\\.)[A-Za-z0-9]+([._%+-]?[0-9])*@[A-Za-z0-9-]+\\.[a-zA-Z]{2,6}(\\.[A-Za-z]{2,6})?$",Email1);
+			System.out.println(Email.eval("value"));
 	}
 
 }
